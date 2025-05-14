@@ -7,15 +7,15 @@ public static class MoneyExtension
     if (amount <= 0)
       return 0;
 
-    var text = amount
+    var value = amount
       .ToString("N2")
       .Replace(",", "")
       .Replace(".", "");
 
-    if (string.IsNullOrEmpty(text))
+    if (string.IsNullOrEmpty(value))
       return 0;
 
-    int.TryParse(text, out int result);
+    int.TryParse(value, out int result);
     return result;
   }
 }
