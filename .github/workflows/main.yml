@@ -32,4 +32,4 @@ jobs:
         run: dotnet pack --configuration Release
 
       - name: Publish NuGet package to NuGet.org
-        run: dotnet nuget push "JP.MoneyExtension/bin/Release/*.nupkg" -k ${{ secrets.NUGET_MONEY_EXTENSIONS_TOKEN_002 }} -s https://api.nuget.org/v3/index.json
+        run: dotnet nuget push "JP.MoneyExtension.002/bin/Release/*.nupkg" -k ${{ secrets.NUGET_MONEY_EXTENSIONS_TOKEN_002 }} -s https://api.nuget.org/v3/index.json
